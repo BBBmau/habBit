@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:habbit/studentView/hype_view.dart';
+import 'package:habbit/studentView/reward_view.dart';
 import 'package:habbit/studentView/study_view.dart';
 import 'package:habbit/studentView/widgets/progress_bar.dart';
 
@@ -16,9 +18,9 @@ class studentView extends StatelessWidget {
         ),
       body: Container(
           child:Column( 
-            children:[Expanded(child: studyView()),
+            children:const [Expanded(child: rewardView()),
               Expanded(
-                child: const progressBar()),
+                child: progressBar()),
                 ]
             ,)
         ),
