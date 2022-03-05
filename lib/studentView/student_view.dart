@@ -18,9 +18,13 @@ class studentView extends StatelessWidget {
         ),
       body: Container(
           child:Column( 
-            children:const [Expanded(child: rewardView()),
-              Expanded(
-                child: progressBar()),
+            children:[Expanded(child: rewardView()),
+              Expanded(child: Container(
+                width: 1,
+                child: progressBar(),
+                  )
+                )
+                ,
                 ]
             ,)
         ),
