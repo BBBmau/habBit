@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:habbit/studentView/main_view.dart';
+import 'package:habbit/studentView/student_view.dart';
 
 String getFullName(String firstname, String lastname){
   return 'Hello';
