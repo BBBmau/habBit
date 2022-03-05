@@ -16,18 +16,17 @@ class studentView extends StatelessWidget {
           child:Text("Hello Mauricio!"),
           )
         ),
-      body: Container(
-          child:Column( 
-            children:[Expanded(child: rewardView()),
-              Expanded(child: Container(
-                width: 1,
-                child: progressBar(),
-                  )
-                )
-                ,
-                ]
-            ,)
-        ),
+      body: Column( 
+        children:[const Expanded(
+          flex:5,
+          child: rewardView()),
+          Expanded(child: Container(
+            child: progressBar(),
+              )
+            )
+            ,
+            ]
+        ,),
     );
   }
 }
