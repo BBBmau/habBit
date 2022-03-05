@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:habbit/studentView/main_view.dart';
 
 String getFullName(String firstname, String lastname){
   return 'Hello';
@@ -16,17 +17,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "Welcome to Habbit!",
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Center(
-            child:Text("Hello Mauricio!")
-            ),
-          ),
-          body: const Center(
-            child: Text("How are you?"),
-          ),
-      //home: studentView()
-      )
+      home: const studentView()
     );
   }
 }
