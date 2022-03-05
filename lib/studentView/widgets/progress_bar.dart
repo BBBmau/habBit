@@ -5,9 +5,7 @@ class progressBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: progressWidget()
-    );
+    return const progressWidget();
   }
 }
 
@@ -44,18 +42,18 @@ class _progressWidgetState extends State<progressWidget>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: Padding(
       padding: const EdgeInsets.all(20.0),
       child: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        mainAxisAlignment: MainAxisAlignment.end,
         children: <Widget>[
-          const Text('Linear Progress!',
-          style: TextStyle(fontSize: 20),
-          ),
           LinearProgressIndicator(
             value: controller.value,
             semanticsLabel: 'Linear Progress Indicator',
             ),
+            const Text("Points!",
+            style: TextStyle(height: 3.0),)
           ],
         ),
       )
