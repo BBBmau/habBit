@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 
 void main() {
+  var name = 'Mauricio';
+  name = 'Mau';
+  
   runApp(const MyApp());
 }
 
