@@ -16,9 +16,10 @@ class studentView extends StatelessWidget {
           child:Text("Hello Mauricio!"),
           )
         ),
-      body: Column( 
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children:[const Expanded(
-          flex:5,
+          flex:6,
           child: rewardView()),
           Expanded(child: Container(
             child: progressBar(),
