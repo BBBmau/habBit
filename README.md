@@ -1,6 +1,6 @@
 # habbit
 
-A new Flutter project.
+A web app to assist 
 
 ## Getting Started
 
