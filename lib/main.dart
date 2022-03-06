@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:habbit/studentView/student_view.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
 
 String getFullName(String firstname, String lastname) {
   return 'Hello';
 }
 
-void main() {
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
   runApp(const MyApp());
 }
 
