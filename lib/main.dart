@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:habbit/studentView/student_view.dart';
 
-String getFullName(String firstname, String lastname){
+String getFullName(String firstname, String lastname) {
   return 'Hello';
 }
 
@@ -15,9 +15,6 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: "Welcome to Habbit!",
-      home: const studentView()
-    );
+    return MaterialApp(title: "Welcome to Habbit!", home: const studentView());
   }
 }
