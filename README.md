@@ -1,6 +1,6 @@
-# habbit
+# Zoomy
 
-A web app to assist 
+A web app to improve student engagement during Zoom lectures
 
 ## Getting Started
 
