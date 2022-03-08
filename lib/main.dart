@@ -1,16 +1,32 @@
 import 'package:flutter/material.dart';
 import 'package:habbit/studentView/student_view.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'firebase_options.dart';
 import 'package:firebase_database/firebase_database.dart';
-
-String getFullName(String firstname, String lastname) {
-  return 'Hello';
-}
+import 'firebase_options.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.web,
+  );
+
+  DatabaseReference database = FirebaseDatabase.instance.ref();
+
+  print("Firebase Apps: ${Firebase.apps.length}");
+
+  print(Firebase.apps[0].options.databaseURL.toString());
+
+  await database.set({
+    "name": "Mauricio",
+    "age": 23,
+    "address": {
+      "city": "Cathedral City",
+      "state": "CA",
+      "street": "San Eljay Ave",
+      "number": 31150,
+    }
+  });
+
   runApp(const MyApp());
 }
 

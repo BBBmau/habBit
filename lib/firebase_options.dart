@@ -22,9 +22,15 @@ class DefaultFirebaseOptions {
     // ignore: missing_enum_constant_in_switch
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
-        return android;
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for android - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
       case TargetPlatform.iOS:
-        return ios;
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for ios - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
       case TargetPlatform.macOS:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for macos - '
@@ -46,25 +52,5 @@ class DefaultFirebaseOptions {
     databaseURL: 'https://habbit-f077c-default-rtdb.firebaseio.com',
     storageBucket: 'habbit-f077c.appspot.com',
     measurementId: 'G-ESVLL5EJD0',
-  );
-
-  static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyBKZ9w5TA2X7YPxq4bi9VBto46dg-l8Dsk',
-    appId: '1:561429560272:android:e43b5bdf999d07d5c357d5',
-    messagingSenderId: '561429560272',
-    projectId: 'habbit-f077c',
-    databaseURL: 'https://habbit-f077c-default-rtdb.firebaseio.com',
-    storageBucket: 'habbit-f077c.appspot.com',
-  );
-
-  static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyCUu6cDzGEJT3ore2kk75tLZaVW7cFDtjE',
-    appId: '1:561429560272:ios:41fe4a0804f05d46c357d5',
-    messagingSenderId: '561429560272',
-    projectId: 'habbit-f077c',
-    databaseURL: 'https://habbit-f077c-default-rtdb.firebaseio.com',
-    storageBucket: 'habbit-f077c.appspot.com',
-    iosClientId: '561429560272-sl70q422gvi1chiovb8frmigpup8cocf.apps.googleusercontent.com',
-    iosBundleId: 'com.habbit',
   );
 }

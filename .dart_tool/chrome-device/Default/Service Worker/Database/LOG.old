@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-2022/03/05-17:31:00.318 14a03 Reusing MANIFEST /private/var/folders/pd/3w0nnxq9719_rr36ts1lnpk40000gn/T/flutter_tools.7J3ru6/flutter_tools_chrome_device.Bw6JyK/Default/Service Worker/Database/MANIFEST-000001
-2022/03/05-17:31:00.318 14a03 Recovering log #3
-2022/03/05-17:31:00.318 14a03 Reusing old log /private/var/folders/pd/3w0nnxq9719_rr36ts1lnpk40000gn/T/flutter_tools.7J3ru6/flutter_tools_chrome_device.Bw6JyK/Default/Service Worker/Database/000003.log 
-=======
-2022/03/05-12:53:00.433 12702c Reusing MANIFEST /tmp/flutter_tools.MWCNPR/flutter_tools_chrome_device.VQNSNP/Default/Service Worker/Database/MANIFEST-000001
-2022/03/05-12:53:00.433 12702c Recovering log #3
-2022/03/05-12:53:00.434 12702c Reusing old log /tmp/flutter_tools.MWCNPR/flutter_tools_chrome_device.VQNSNP/Default/Service Worker/Database/000003.log 
->>>>>>> ca792c630eb1b8388d2dfef9b69a5b36178644da
+2022/03/07-22:22:50.331 256ce Reusing MANIFEST /tmp/flutter_tools.ARMATE/flutter_tools_chrome_device.EHVWSA/Default/Service Worker/Database/MANIFEST-000001
+2022/03/07-22:22:50.332 256ce Recovering log #3
+2022/03/07-22:22:50.332 256ce Reusing old log /tmp/flutter_tools.ARMATE/flutter_tools_chrome_device.EHVWSA/Default/Service Worker/Database/000003.log 
