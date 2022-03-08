@@ -1,8 +1,16 @@
 import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
+import 'dart:developer' as developer;
+import 'package:firebase_core/firebase_core.dart';
+import 'package:habbit/main.dart';
 
 class rewardView extends StatelessWidget {
-  const rewardView({Key? key}) : super(key: key);
+  rewardView({Key? key}) : super(key: key);
+
+  DatabaseReference databaseReference = FirebaseDatabase(
+          app: Firebase.apps[0],
+          databaseURL: Firebase.apps[0].options.databaseURL)
+      .reference();
 
   @override
   Widget build(BuildContext context) {
@@ -62,7 +70,10 @@ class rewardView extends StatelessWidget {
                                   foregroundColor:
                                       MaterialStateProperty.all(Colors.amber),
                                 ),
-                                onPressed: () {},
+                                onPressed: () async {
+                                  // print(ref.databaseURL);
+                                  // print(ref.app?.options.databaseURL);
+                                },
                                 child: const Image(
                                     image: AssetImage(
                                         "lib/studentView/images/robux.png")))),
@@ -79,7 +90,11 @@ class rewardView extends StatelessWidget {
                                   foregroundColor:
                                       MaterialStateProperty.all(Colors.amber),
                                 ),
-                                onPressed: () => {},
+                                onPressed: () async => {
+                                      await databaseReference.set({
+                                        "mauricio": 200,
+                                      })
+                                    },
                                 child: const Image(
                                     image: AssetImage(
                                         "lib/studentView/images/emerald_mc.gif")))),
